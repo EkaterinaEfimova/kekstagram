@@ -35,3 +35,18 @@ function parseIntInString(str) {
 }
 
 parseIntInString('2023 год');
+
+function IsWorkTime(startWorkTime, endWorkTime, startMeetingTime, lengthMeeting) {
+  function getMinuts(timeStr) {
+    const arrayTime = timeStr.split(':');
+    const minuts = Number(arrayTime[0]) * 60 + Number(arrayTime[1]);
+    return minuts;
+  }
+
+  if (getMinuts(startMeetingTime) >= getMinuts(startWorkTime) && (getMinuts(startMeetingTime) + lengthMeeting) <= getMinuts(endWorkTime)) {
+    return true;
+  }
+  return false;
+}
+
+IsWorkTime('08:00', '17:30', '14:00', 90);
