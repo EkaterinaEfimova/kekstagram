@@ -6,7 +6,7 @@ const picturesContainer = document.querySelector('.pictures');
 
 generateUsersPhoto(descriptionPhoto, picturesContainer);
 
-const bigPicture = document.querySelector('.big-picture');
+/*const bigPicture = document.querySelector('.big-picture');
 const canselBigPicures = document.querySelector('.big-picture__cancel');
 
 picturesContainer.addEventListener('click', (evt) => {
@@ -22,4 +22,4 @@ picturesContainer.addEventListener('click', (evt) => {
 
 canselBigPicures.addEventListener('click', () => {
   bigPicture.classList.add('hidden');
-});
+});*/

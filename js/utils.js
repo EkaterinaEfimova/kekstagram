@@ -17,4 +17,12 @@ const createArray = (number, element) => {
   return resultArray;
 };
 
-export { getRandomInteger, getRandomArrayElement, createIdGenerator, createArray };
+const toggleClass = (element, className = '') => {
+  if (element) {
+    element.classList.toggle(className);
+  }
+};
+
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export { getRandomInteger, getRandomArrayElement, createIdGenerator, createArray, toggleClass, isEscapeKey };
