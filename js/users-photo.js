@@ -17,7 +17,8 @@ const generateUsersPhoto = function (dateArrey, container) {
     picturesElement.querySelector('.picture__comments').textContent = comments.length;
     picturesListFragment.appendChild(picturesElement);
 
-    picturesElement.addEventListener('click', () => {
+    picturesElement.addEventListener('click', (evt) => {
+      evt.preventDefault();
       generateBigPhoto(picture);
     });
   });
